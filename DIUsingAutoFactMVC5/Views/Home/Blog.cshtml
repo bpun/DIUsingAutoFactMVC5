@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Blog";
+}
+
+<h2>Blog</h2>
+
+@using DIUsingAutoFactMVC5.Models
+@model Blog
+
+@foreach(Post post in Model.PostList)
+{
+    <p><b>@post.Title</b></p>
+    <div>@post.Content</div>
+    <hr/>
+}
+
